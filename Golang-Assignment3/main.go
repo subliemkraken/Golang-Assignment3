@@ -1,16 +1,16 @@
 package main
 
 import (
-	data "Golang-Assignment3/files"
+	"Golang-Assignment3/files"
 	"time"
 )
 
 func main() {
 	go func() {
 		for {
-			data.UpdateResp()
-			data.PrintStatus()
-			data.GetResp()
+			files.UpdateResp()
+			files.PrintStatus()
+			files.GetResp()
 			time.Sleep(15 * time.Second)
 		}
 	}()
